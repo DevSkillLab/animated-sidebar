@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Animated Sidebar</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="toggle-btn" onclick="onClickToggle()">
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+      </div>
+      <ul class="list">
+        <li class="item logo">
+          <a href="#">
+            <div class="icon">
+              <ion-icon name="grid"></ion-icon>
+            </div>
+            <p class="text">Dashboard</p>
+          </a>
+        </li>
+
+        <div class="menu-list">
+          <li class="item active">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="home"></ion-icon>
+              </div>
+              <p class="text">Home</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="person"></ion-icon>
+              </div>
+              <p class="text">Profile</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="chatbubble-ellipses"></ion-icon>
+              </div>
+              <p class="text">Inbox</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="pie-chart"></ion-icon>
+              </div>
+              <p class="text">Analytics</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="cart"></ion-icon>
+              </div>
+              <p class="text">Order</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <div class="icon">
+                <ion-icon name="cog"></ion-icon>
+              </div>
+              <p class="text">Settings</p>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </div>
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="theme-toggle" onclick="changeTheme()">
+        <ion-icon name="moon"></ion-icon>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
